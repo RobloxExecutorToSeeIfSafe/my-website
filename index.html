@@ -1,5 +1,54 @@
-@echo off title Simple Multitool color 0A :menu cls echo ========================= echo _____ ______ ___ ___ ___ _________ ___ _________ ________ ________ ___ |\ _ \ _ \|\ \|\ \|\ \ |\___ ___\\ \|\___ ___\\ __ \|\ __ \|\ \ \ \ \\\__\ \ \ \ \\\ \ \ \\|___ \ \_\ \ \|___ \ \_\ \ \|\ \ \ \|\ \ \ \ \ \ \\|__| \ \ \ \\\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \\\ \ \ \\\ \ \ \ \ \ \ \ \ \ \ \\\ \ \ \____\ \ \ \ \ \ \ \ \ \ \ \\\ \ \ \\\ \ \ \____ \ \__\ \ \__\ \_______\ \_______\ \__\ \ \__\ \ \__\ \ \_______\ \_______\ \_______\ \|__| \|__|\|_______|\|_______|\|__| \|__| \|__| \|_______|\|_______|\|_______| echo ========================= echo 1. RAT [ REMOTE ACCESS TROJAN] echo 2. Show System Info echo 3. pizzaboxxer echo 4. IP grabber echo 5. SCREENSHOOT echo ========================= set /p choice=Choose an option: if %choice%==1 goto calc if %choice%==2 goto sysinfo if %choice%==3 goto notepad if %choice%==4 goto random if %choice%==5 exit goto menu :calc cls set /p a=Enter first number: set /p b=Enter second number: set /a result=%a%+%b% echo Result: %result% pause goto menu :sysinfo cls systeminfo pause goto menu :notepad start notepad goto menu :random cls set /a num=%random% echo Random Number: %num% pause goto menu
-The code on the top of me is multitool btw.
+@echo off
+title Simple Multitool
+color 0A
+
+:menu
+cls
+echo =========================
+echo        MULTITOOL
+echo =========================
+echo 1. Calculator
+echo 2. Show System Info
+echo 3. Open Notepad
+echo 4. Generate Random Number
+echo 5. Exit
+echo =========================
+set /p choice=Choose an option: 
+
+if %choice%==1 goto calc
+if %choice%==2 goto sysinfo
+if %choice%==3 goto notepad
+if %choice%==4 goto random
+if %choice%==5 exit
+
+goto menu
+
+:calc
+cls
+set /p a=Enter first number: 
+set /p b=Enter second number: 
+set /a result=%a%+%b%
+echo Result: %result%
+pause
+goto menu
+
+:sysinfo
+cls
+systeminfo
+pause
+goto menu
+
+:notepad
+start notepad
+goto menu
+
+:random
+cls
+set /a num=%random%
+echo Random Number: %num%
+pause
+goto menu
+The code on the TOP OF ME IT WILL BE HIDING. is multitool btw.
 login @echo off
 title Advanced Multitool
 color 0B
